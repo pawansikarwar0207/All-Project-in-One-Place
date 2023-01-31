@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library Card</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.container{
+			padding: 20px;
+			border-radius: 5px;
+			margin: 50px 20px;
+			background-color: lightgray;
+			max-width: 500px;
+  		margin: auto;
+			background-image: url("image/download3.jfif");
+			background-repeat: no-repeat;
+			background-size: 270%;
+			}
+		label{
+			font-size: 20px;
+			display: inline-block;
+			padding: 12px 12px 12px 0;
+		}
+		input[type=text]{
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 8px 0;
+			width: 96%;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=address]{
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 8px 0;
+			width: 96%;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=address1]{
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=address2]{
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=fname]{
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=lname]{
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=ygroup]{
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 8px 0;
+			width: 96%;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit]{
+			display: inline-block;
+			padding: 12px 20px;
+			margin: 8px 0;
+			width: 50%;
+			border: 1px solid black;
+			border-radius: 4px;
+			box-sizing: border-box;
+			cursor: pointer;
+		}
+		.col-50{
+			float: left;
+			margin-top: 6px;
+			width: 50%;
+		}
+		.col-50{
+			float: left;
+			margin-top: 6px;
+			width: 50%;
+		}
+		input[type=submit]:hover{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<form action="action.php">
+		<h2 style="text-align:center">Library Membership Form </h2>
+		<caption>Student Information</caption>
+		<br>
+		<label for="School Name">School Name *</label><br>
+		<input type="text" name="School Name" id="School Name" placeholder=" "><br>
+		<label for="text">Student Name *</label><br>
+		<div class="col-50">
+		<input type="fname" name="Student Name" id="Student Name" placeholder="First Name">
+		</div>
+		<div class="col-50">
+		<input type="lname" name="Student Name" id="Student Name" placeholder="Last Name">
+		</div>
+		<br>
+		<label for="Address">Home Address *</label><br>
+		<input type="Address" name="Address" id="address" placeholder="Street Address"><br>
+		<input type="Address" name="Address" id="address" placeholder="Street Address Line 2"><br>
+		<div class="col-50">
+		<input type="Address1" name="Address1" id="address1" placeholder="City">
+		</div>
+		<div class="col-50">
+		<input type="Address1" name="Address1" id="address1" placeholder="Region"><br>
+		</div>
+		<div class="col-50">
+		<input type="Address2" name="Address2" id="Address2" placeholder="Postal/Zip Code">
+		</div>
+		<div class="col-50">
+		<input type="Address2" name="Address2" id="Address2" placeholder="Country"><br>
+		</div>
+		<label for="year group">Year Group *</label><br>
+		<input type="ygroup" name="text" id="text" placeholder=""><br>
+		<input type="submit" name="Submit">	
+	</form>
+	</div>
+</body>
+</html>
